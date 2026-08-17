@@ -4,7 +4,9 @@
 
 services:
   - type: web
-    name: cyber-tech
+    # Must match the existing Render service name, or the Blueprint will
+    # create a second service on a different .onrender.com subdomain.
+    name: cyber-tech-website
     runtime: static
     buildCommand: echo "Static site - no build step required"
     staticPublishPath: .
