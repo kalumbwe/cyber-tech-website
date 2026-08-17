@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cyber Tech | Custom Software, School &amp; Business Management Systems — Kitwe, Zambia</title>
+<meta name="description" content="Cyber Tech builds professional business software, company management systems, school management systems (Form 1–Form 5), student portals, custom web apps and provides software installation &amp; IT support. Based in Kitwe, Zambia." />
+<meta name="keywords" content="school management system Zambia, student portal, business software Kitwe, company management system, software developer Zambia, IT support Kitwe, custom software Zambia" />
+<meta name="author" content="Cyber Tech" />
+<meta name="theme-color" content="#05070e" />
+
+<!-- Social sharing -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Cyber Tech — Software That Runs Your Institution" />
+<meta property="og:description" content="Business software, school management systems, student portals and IT support. Built in Kitwe, Zambia." />
+<meta property="og:locale" content="en_ZM" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305070e'/%3E%3Cpath d='M20 22h24M20 32h16M20 42h20' stroke='%2322d3ee' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+
+<!-- Local business structured data (helps you show up on Google Maps / search) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Cyber Tech",
+  "description": "Custom software development: business management systems, school management systems, student portals, web applications, software installation and IT support.",
+  "telephone": "+260975341516",
+  "email": "rainserick@gmail.com",
+  "areaServed": "Zambia",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kitwe",
+    "addressCountry": "ZM"
+  },
+  "openingHours": ["Mo-Fr 08:00-17:00", "Sa 08:00-13:00"]
+}
+</script>
+</head>
+
+<body>
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo" aria-label="Cyber Tech home">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M6 9h20M6 16h13M6 23h17" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+      </span>
+      <span class="logo__text">Cyber<span>Tech</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#solutions" class="nav__link">Solutions</a>
+      <a href="#work" class="nav__link">Our Work</a>
+      <a href="#process" class="nav__link">Process</a>
+      <a href="#faq" class="nav__link">FAQ</a>
+      <a href="#contact" class="nav__link nav__link--cta">Get a Quote</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__spotlight" id="heroSpotlight" aria-hidden="true"></div>
+  <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+  <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="pill" data-reveal>
+        <span class="pill__dot"></span>
+        Software Development &amp; IT Solutions &mdash; Kitwe, Zambia
+      </span>
+
+      <h1 class="hero__title" data-reveal>
+        We build software that runs
+        <span class="type-wrap">
+          <span class="type-target" id="typeTarget"></span><span class="type-caret" aria-hidden="true"></span>
+        </span>
+      </h1>
+
+      <p class="hero__lead" data-reveal>
+        From full school management systems (Form 1&nbsp;&ndash;&nbsp;Form 5) and student portals, to company
+        management platforms, business software and professional software installation &mdash;
+        Cyber Tech delivers reliable, modern systems built for real Zambian institutions.
+      </p>
+
+      <div class="hero__actions" data-reveal>
+        <a href="#contact" class="btn btn--primary magnetic">
+          Start Your Project
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#work" class="btn btn--ghost magnetic">See Our Work</a>
+      </div>
+
+      <ul class="hero__trust" data-reveal>
+        <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Free consultation</li>
+        <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Training included</li>
+        <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> After&#8209;sales support</li>
+      </ul>
+    </div>
+
+    <!-- LIVE CLOCK PANEL -->
+    <aside class="clock-card" data-reveal aria-label="Live local time and office availability">
+      <div class="clock-card__head">
+        <span class="clock-card__label">Kitwe, Zambia &middot; Live</span>
+        <span class="status" id="officeStatus"><span class="status__dot"></span><span id="officeStatusText">Checking…</span></span>
+      </div>
+
+      <div class="clock" aria-live="off">
+        <span class="clock__time" id="clockTime">--:--:--</span>
+        <span class="clock__meridiem" id="clockMeridiem">--</span>
+      </div>
+      <div class="clock__date" id="clockDate">Loading date…</div>
+
+      <div class="clock-card__meta">
+        <div class="clock-meta">
+          <span class="clock-meta__k">Time zone</span>
+          <span class="clock-meta__v">CAT &middot; UTC+2</span>
+        </div>
+        <div class="clock-meta">
+          <span class="clock-meta__k">Office hours</span>
+          <span class="clock-meta__v">Mon&ndash;Fri 08:00&ndash;17:00</span>
+        </div>
+      </div>
+
+      <a class="clock-card__cta magnetic" href="https://wa.me/260975341516?text=Hello%20Cyber%20Tech%2C%20I%27d%20like%20to%20discuss%20a%20software%20project." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.16c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.75-1.08-4.5-3.88-4.64-4.06-.13-.18-1.11-1.48-1.11-2.82s.7-2 .95-2.28c.25-.27.54-.34.72-.34l.52.01c.17 0 .4-.06.62.47.24.57.8 1.98.87 2.12.07.14.12.3.02.48-.09.18-.14.3-.28.46l-.42.48c-.14.14-.28.29-.12.57.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </aside>
+  </div>
+
+  <!-- STATS -->
+  <!-- EDIT ME: replace these numbers with your real figures before publishing -->
+  <div class="container">
+    <div class="stats" data-reveal>
+      <div class="stat"><span class="stat__num" data-count="25" data-suffix="+">0</span><span class="stat__label">Systems delivered</span></div>
+      <div class="stat"><span class="stat__num" data-count="5" data-suffix="+">0</span><span class="stat__label">Years building software</span></div>
+      <div class="stat"><span class="stat__num" data-count="100" data-suffix="%">0</span><span class="stat__label">Custom-built, not templates</span></div>
+      <div class="stat"><span class="stat__num" data-count="24" data-suffix="/7">0</span><span class="stat__label">Support line</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>School Management Systems</span><span>&bull;</span>
+    <span>Student Portals</span><span>&bull;</span>
+    <span>Company Management</span><span>&bull;</span>
+    <span>Payroll &amp; HR</span><span>&bull;</span>
+    <span>Point of Sale</span><span>&bull;</span>
+    <span>Inventory Control</span><span>&bull;</span>
+    <span>Web Applications</span><span>&bull;</span>
+    <span>Software Installation</span><span>&bull;</span>
+    <span>IT Support</span><span>&bull;</span>
+    <span>School Management Systems</span><span>&bull;</span>
+    <span>Student Portals</span><span>&bull;</span>
+    <span>Company Management</span><span>&bull;</span>
+    <span>Payroll &amp; HR</span><span>&bull;</span>
+    <span>Point of Sale</span><span>&bull;</span>
+    <span>Inventory Control</span><span>&bull;</span>
+    <span>Web Applications</span><span>&bull;</span>
+    <span>Software Installation</span><span>&bull;</span>
+    <span>IT Support</span><span>&bull;</span>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">What we do</span>
+      <h2 class="section__title">Complete software solutions, end to end</h2>
+      <p class="section__sub">
+        Every system is designed around how your organisation actually works &mdash; then built,
+        installed, tested and supported by us.
+      </p>
+    </div>
+
+    <div class="cards">
+      <article class="card tilt" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="card__title">School Management Systems</h3>
+        <p class="card__text">
+          A full academic platform covering Form 1 to Form 5 (and primary grades):
+          enrolment, class allocation, attendance, continuous assessment, exam marks,
+          automatic report cards, fee balances and receipts.
+        </p>
+        <ul class="card__list">
+          <li>Termly &amp; annual report cards</li>
+          <li>Fees, receipts &amp; arrears tracking</li>
+          <li>Timetable &amp; attendance registers</li>
+        </ul>
+      </article>
+
+      <article class="card tilt" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 12.2l1.8 1.8 3.4-3.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="card__title">Student &amp; Parent Portals</h3>
+        <p class="card__text">
+          Secure online access where students check results, fee statements and
+          notices, and parents follow their child's progress from any phone or computer.
+        </p>
+        <ul class="card__list">
+          <li>Online registration &amp; admissions</li>
+          <li>Results &amp; transcripts on demand</li>
+          <li>Notice board &amp; SMS/email alerts</li>
+        </ul>
+      </article>
+
+      <article class="card tilt" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 20h18M6 20V10m4 10V5m4 15v-7m4 7V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="card__title">Business &amp; Company Management</h3>
+        <p class="card__text">
+          One system to run the whole company: sales, stock, suppliers, customers,
+          expenses, invoices and management reports that actually make decisions easier.
+        </p>
+        <ul class="card__list">
+          <li>Point of Sale &amp; invoicing</li>
+          <li>Inventory &amp; stock control</li>
+          <li>Profit, sales &amp; expense reports</li>
+        </ul>
+      </article>
+
+      <article class="card tilt" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M17 11h4M17 15h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="card__title">HR, Payroll &amp; Staff Records</h3>
+        <p class="card__text">
+          Employee records, contracts, leave, attendance and payroll with automatic
+          payslips and statutory deductions &mdash; accurate every month, no spreadsheets.
+        </p>
+        <ul class="card__list">
+          <li>Automated payslips</li>
+          <li>Leave &amp; attendance tracking</li>
+          <li>Statutory deduction handling</li>
+        </ul>
+      </article>
+
+      <article class="card tilt" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="4" width="19" height="13" rx="2.2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 10.5l-2 2 2 2M16 10.5l2 2-2 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="card__title">Custom Web &amp; Desktop Apps</h3>
+        <p class="card__text">
+          Have a workflow no off-the-shelf product handles? We design and build it from
+          scratch &mdash; websites, dashboards, databases and internal tools.
+        </p>
+        <ul class="card__list">
+          <li>Business websites &amp; landing pages</li>
+          <li>Dashboards &amp; reporting tools</li>
+          <li>Database design &amp; migration</li>
+        </ul>
+      </article>
+
+      <article class="card tilt" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10.5 3.5l1.5 3 3 1.5-3 1.5-1.5 3-1.5-3-3-1.5 3-1.5 1.5-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M17.5 13l.9 1.9 1.9.9-1.9.9-.9 1.9-.9-1.9-1.9-.9 1.9-.9.9-1.9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 15h6M4 19h9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="card__title">Software Installation &amp; IT Support</h3>
+        <p class="card__text">
+          Operating systems, office suites, antivirus, drivers, networking and system
+          setup &mdash; installed properly, configured for your team and backed by support.
+        </p>
+        <ul class="card__list">
+          <li>OS &amp; application installation</li>
+          <li>Network &amp; device setup</li>
+          <li>Staff training &amp; maintenance</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLAGSHIP SOLUTION ============ -->
+<section class="section section--alt" id="solutions">
+  <div class="container">
+    <div class="split">
+      <div class="split__text" data-reveal>
+        <span class="eyebrow">Flagship solution</span>
+        <h2 class="section__title">The Cyber Tech School Management System</h2>
+        <p class="section__sub section__sub--left">
+          Built for Zambian secondary schools &mdash; from admission of a Form&nbsp;1 pupil all the
+          way to their Form&nbsp;5 results and leaving certificate. One system for the office,
+          the staff room, the students and the parents.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature">
+            <span class="feature__num">01</span>
+            <div>
+              <h4>Admissions &amp; enrolment</h4>
+              <p>Register new pupils, assign classes and streams, and keep a permanent, searchable student file.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature__num">02</span>
+            <div>
+              <h4>Marks &amp; report cards</h4>
+              <p>Teachers enter marks per subject; the system calculates positions, averages and prints clean report cards.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature__num">03</span>
+            <div>
+              <h4>Fees &amp; finance</h4>
+              <p>Fee structures per class, receipts, balances, arrears lists and daily collection reports for the bursar.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature__num">04</span>
+            <div>
+              <h4>Roles &amp; security</h4>
+              <p>Separate logins for admin, teachers, accounts and students &mdash; everyone sees only what they should.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn--primary magnetic">Request a live demo</a>
+      </div>
+
+      <!-- Mock dashboard -->
+      <div class="mock tilt" data-reveal aria-hidden="true">
+        <div class="mock__bar">
+          <span class="mock__dot"></span><span class="mock__dot"></span><span class="mock__dot"></span>
+          <span class="mock__url">cybertech &middot; school suite</span>
+        </div>
+        <div class="mock__body">
+          <div class="mock__side">
+            <span class="mock__navitem is-active"></span>
+            <span class="mock__navitem"></span>
+            <span class="mock__navitem"></span>
+            <span class="mock__navitem"></span>
+            <span class="mock__navitem"></span>
+          </div>
+          <div class="mock__main">
+            <div class="mock__row">
+              <div class="mock__tile"><b>1,248</b><i>Students</i></div>
+              <div class="mock__tile"><b>96%</b><i>Attendance</i></div>
+              <div class="mock__tile"><b>K182k</b><i>Fees paid</i></div>
+            </div>
+            <div class="mock__chart">
+              <span style="--h:38%"></span><span style="--h:62%"></span><span style="--h:47%"></span>
+              <span style="--h:78%"></span><span style="--h:55%"></span><span style="--h:88%"></span>
+              <span style="--h:66%"></span><span style="--h:94%"></span>
+            </div>
+            <div class="mock__lines">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK / PROJECTS ============ -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">Our work</span>
+      <h2 class="section__title">Systems we design and deliver</h2>
+      <p class="section__sub">Filter by the kind of project you have in mind.</p>
+    </div>
+
+    <div class="filters" data-reveal role="tablist" aria-label="Project categories">
+      <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter" data-filter="education" role="tab" aria-selected="false">Education</button>
+      <button class="filter" data-filter="business" role="tab" aria-selected="false">Business</button>
+      <button class="filter" data-filter="web" role="tab" aria-selected="false">Web</button>
+      <button class="filter" data-filter="support" role="tab" aria-selected="false">IT Support</button>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+      <article class="work tilt" data-cat="education" data-reveal>
+        <div class="work__top"><span class="tag">Education</span><span class="work__no">01</span></div>
+        <h3 class="work__title">Secondary School Management Suite</h3>
+        <p class="work__text">Form 1&ndash;Form 5 records, marks capture, automatic report cards, fees and finance, plus admin dashboards.</p>
+        <div class="work__stack"><span>Web</span><span>Database</span><span>Reports</span></div>
+      </article>
+
+      <article class="work tilt" data-cat="education" data-reveal>
+        <div class="work__top"><span class="tag">Education</span><span class="work__no">02</span></div>
+        <h3 class="work__title">Student &amp; Parent Portal</h3>
+        <p class="work__text">Self-service logins for results, fee statements, timetables and school announcements on any device.</p>
+        <div class="work__stack"><span>Portal</span><span>Mobile-ready</span><span>Auth</span></div>
+      </article>
+
+      <article class="work tilt" data-cat="education" data-reveal>
+        <div class="work__top"><span class="tag">Education</span><span class="work__no">03</span></div>
+        <h3 class="work__title">University Management System</h3>
+        <p class="work__text">Applications and admissions, intakes, programme registration, admission letters and management reporting.</p>
+        <div class="work__stack"><span>Admissions</span><span>Documents</span><span>Analytics</span></div>
+      </article>
+
+      <article class="work tilt" data-cat="business" data-reveal>
+        <div class="work__top"><span class="tag">Business</span><span class="work__no">04</span></div>
+        <h3 class="work__title">Company Management Platform</h3>
+        <p class="work__text">Departments, staff, projects, documents and approvals in a single controlled workspace.</p>
+        <div class="work__stack"><span>ERP</span><span>Roles</span><span>Workflow</span></div>
+      </article>
+
+      <article class="work tilt" data-cat="business" data-reveal>
+        <div class="work__top"><span class="tag">Business</span><span class="work__no">05</span></div>
+        <h3 class="work__title">Point of Sale &amp; Inventory</h3>
+        <p class="work__text">Fast till screen, barcode support, stock levels, low-stock alerts, receipts and daily sales summaries.</p>
+        <div class="work__stack"><span>POS</span><span>Stock</span><span>Receipts</span></div>
+      </article>
+
+      <article class="work tilt" data-cat="business" data-reveal>
+        <div class="work__top"><span class="tag">Business</span><span class="work__no">06</span></div>
+        <h3 class="work__title">Payroll &amp; HR System</h3>
+        <p class="work__text">Employee master file, leave, attendance and monthly payroll with printable payslips.</p>
+        <div class="work__stack"><span>Payroll</span><span>HR</span><span>PDF</span></div>
+      </article>
+
+      <article class="work tilt" data-cat="web" data-reveal>
+        <div class="work__top"><span class="tag">Web</span><span class="work__no">07</span></div>
+        <h3 class="work__title">Business Websites &amp; Landing Pages</h3>
+        <p class="work__text">Fast, mobile-first websites that present your business professionally and convert visitors into enquiries.</p>
+        <div class="work__stack"><span>Responsive</span><span>SEO</span><span>Forms</span></div>
+      </article>
+
+      <article class="work tilt" data-cat="web" data-reveal>
+        <div class="work__top"><span class="tag">Web</span><span class="work__no">08</span></div>
+        <h3 class="work__title">Custom Dashboards &amp; Reports</h3>
+        <p class="work__text">Turn your existing data into clear charts, exports and reports management can act on.</p>
+        <div class="work__stack"><span>Charts</span><span>Excel/PDF</span><span>Filters</span></div>
+      </article>
+
+      <article class="work tilt" data-cat="support" data-reveal>
+        <div class="work__top"><span class="tag">IT Support</span><span class="work__no">09</span></div>
+        <h3 class="work__title">Software Installation &amp; Setup</h3>
+        <p class="work__text">Windows, Office, antivirus, drivers, printers and network configuration &mdash; done right the first time.</p>
+        <div class="work__stack"><span>Installation</span><span>Networking</span><span>Training</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section section--alt" id="process">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">How we work</span>
+      <h2 class="section__title">A clear process, from first call to go&#8209;live</h2>
+      <p class="section__sub">No jargon, no surprises. You always know what stage your project is at.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step" data-reveal>
+        <span class="step__n">1</span>
+        <h3>Consultation</h3>
+        <p>We sit down with you (in person, on WhatsApp or on a call) and map exactly how your school or business operates today.</p>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__n">2</span>
+        <h3>Proposal &amp; quote</h3>
+        <p>You receive a written scope, timeline and fixed quote &mdash; so you know precisely what you are paying for.</p>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__n">3</span>
+        <h3>Design &amp; build</h3>
+        <p>We develop in stages and show you working screens as we go, so the system matches your expectations early.</p>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__n">4</span>
+        <h3>Install, train &amp; support</h3>
+        <p>We install on your machines or server, train your staff, and stay available for maintenance and improvements.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="section" id="why">
+  <div class="container">
+    <div class="split split--reverse">
+      <div class="split__text" data-reveal>
+        <span class="eyebrow">Why Cyber Tech</span>
+        <h2 class="section__title">Built here, supported here</h2>
+        <p class="section__sub section__sub--left">
+          You are not buying a licence from an overseas company you will never reach.
+          You are working with a developer based in Kitwe who answers the phone,
+          understands the local context, and can be at your office when it matters.
+        </p>
+
+        <div class="why-grid">
+          <div class="why"><h4>Custom, not generic</h4><p>Your system is shaped around your forms, your fee structure and your reports.</p></div>
+          <div class="why"><h4>Local &amp; reachable</h4><p>Based in Kitwe, serving institutions across the Copperbelt and all of Zambia.</p></div>
+          <div class="why"><h4>Training included</h4><p>We train your staff until they are confident using the system daily.</p></div>
+          <div class="why"><h4>Ongoing support</h4><p>Updates, fixes and new features as your organisation grows.</p></div>
+          <div class="why"><h4>Your data stays yours</h4><p>Systems can run on your own computers or server, with proper backups.</p></div>
+          <div class="why"><h4>Honest pricing</h4><p>Clear, written quotes with no hidden charges added later.</p></div>
+        </div>
+      </div>
+
+      <div class="quote-card" data-reveal>
+        <svg class="quote-card__mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.5 5C6.5 6.5 4.5 9.5 4.5 13v6h6v-6h-3c0-2 1-3.5 3-4.5L9.5 5zm10 0c-3 1.5-5 4.5-5 8v6h6v-6h-3c0-2 1-3.5 3-4.5L19.5 5z"/></svg>
+        <p class="quote-card__text">
+          Good software should make the last hour of the working day the easiest one.
+          That is the standard every Cyber Tech system is built to.
+        </p>
+        <div class="quote-card__by">
+          <span class="quote-card__avatar" aria-hidden="true">CT</span>
+          <div>
+            <strong>Cyber Tech</strong>
+            <span>Software Development &amp; IT Solutions</span>
+          </div>
+        </div>
+        <!--
+          TIP: Once you have real client testimonials, replace this card with them
+          (name, organisation and what the system did for them). Real quotes convert
+          far better than anything generic.
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PACKAGES ============ -->
+<section class="section section--alt" id="packages">
+  <div class="container">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">Engagements</span>
+      <h2 class="section__title">Choose how we work together</h2>
+      <p class="section__sub">Every quote is prepared after a free consultation &mdash; you only pay for what you need.</p>
+    </div>
+
+    <div class="plans">
+      <article class="plan tilt" data-reveal>
+        <h3 class="plan__name">Starter</h3>
+        <p class="plan__for">For small businesses &amp; single-office setups</p>
+        <ul class="plan__list">
+          <li>Business website or single-purpose app</li>
+          <li>Software installation &amp; device setup</li>
+          <li>Basic records &amp; reporting</li>
+          <li>Staff orientation session</li>
+          <li>30 days post-launch support</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--full magnetic">Request a quote</a>
+      </article>
+
+      <article class="plan plan--featured tilt" data-reveal>
+        <span class="plan__badge">Most requested</span>
+        <h3 class="plan__name">Institution</h3>
+        <p class="plan__for">For schools, colleges &amp; growing companies</p>
+        <ul class="plan__list">
+          <li>Full management system (school or business)</li>
+          <li>Student / staff portal access</li>
+          <li>Fees, payroll or inventory modules</li>
+          <li>Report cards, invoices &amp; PDF exports</li>
+          <li>On-site installation &amp; full staff training</li>
+          <li>3 months support &amp; refinements</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--full magnetic">Book a consultation</a>
+      </article>
+
+      <article class="plan tilt" data-reveal>
+        <h3 class="plan__name">Enterprise</h3>
+        <p class="plan__for">For multi-branch &amp; custom requirements</p>
+        <ul class="plan__list">
+          <li>Multi-branch / multi-campus deployment</li>
+          <li>Custom modules &amp; integrations</li>
+          <li>Data migration from existing records</li>
+          <li>Server setup &amp; backup strategy</li>
+          <li>Priority support agreement</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--full magnetic">Talk to us</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container container--narrow">
+    <div class="section__head" data-reveal>
+      <span class="eyebrow">Questions</span>
+      <h2 class="section__title">Frequently asked</h2>
+    </div>
+
+    <div class="faq">
+      <details class="faq__item" data-reveal>
+        <summary>How long does a school management system take to build?</summary>
+        <div class="faq__body"><p>It depends on how many modules you need. A focused system (records, marks and report cards) is typically ready in a few weeks, while a full suite with fees, portal access and reporting takes longer. You get an exact timeline in your written proposal.</p></div>
+      </details>
+      <details class="faq__item" data-reveal>
+        <summary>Does the system need internet to work?</summary>
+        <div class="faq__body"><p>Not necessarily. We can install it to run on your own computers or local network so it works fully offline, or host it online so students and parents can log in from anywhere. Many clients use a combination of both.</p></div>
+      </details>
+      <details class="faq__item" data-reveal>
+        <summary>Can you move our existing records into the new system?</summary>
+        <div class="faq__body"><p>Yes. If your data is in Excel, Access, another system or even structured paper registers, we can import it so you start with your history intact rather than from an empty database.</p></div>
+      </details>
+      <details class="faq__item" data-reveal>
+        <summary>Will you train our staff?</summary>
+        <div class="faq__body"><p>Always. Training is part of every delivery. We work with the people who will use the system daily &mdash; teachers, bursars, clerks or cashiers &mdash; until they are comfortable, and we leave a simple user guide behind.</p></div>
+      </details>
+      <details class="faq__item" data-reveal>
+        <summary>What happens if something breaks later?</summary>
+        <div class="faq__body"><p>You call or WhatsApp us. Every project includes a support period after launch, and we offer ongoing maintenance agreements for updates, fixes and new features as your needs change.</p></div>
+      </details>
+      <details class="faq__item" data-reveal>
+        <summary>Do you work outside Kitwe?</summary>
+        <div class="faq__body"><p>Yes. Our offices are in Kitwe, but we serve clients across the Copperbelt and the rest of Zambia. Much of the work can be done remotely, with site visits arranged for installation and training.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section--contact" id="contact">
+  <div class="container">
+    <div class="contact">
+      <div class="contact__info" data-reveal>
+        <span class="eyebrow">Get in touch</span>
+        <h2 class="section__title">Let's build your system</h2>
+        <p class="section__sub section__sub--left">
+          Tell us what you need &mdash; a school system, a business platform, a website or
+          simply software installed properly. The first consultation is free.
+        </p>
+
+        <ul class="contact__list">
+          <li>
+            <span class="contact__ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6.5C4 5.1 5.1 4 6.5 4h1.8c.7 0 1.3.5 1.5 1.2l.7 2.7c.1.6-.1 1.2-.6 1.5l-1.3.9a12.5 12.5 0 005.1 5.1l.9-1.3c.3-.5.9-.7 1.5-.6l2.7.7c.7.2 1.2.8 1.2 1.5v1.8c0 1.4-1.1 2.5-2.5 2.5C10.9 20 4 13.1 4 6.5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+            <div><span class="contact__k">Phone / WhatsApp</span><a class="contact__v" href="tel:+260975341516">+260 975 341 516</a></div>
+          </li>
+          <li>
+            <span class="contact__ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><span class="contact__k">Email</span><a class="contact__v" href="mailto:rainserick@gmail.com">rainserick@gmail.com</a></div>
+          </li>
+          <li>
+            <span class="contact__ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" stroke="currentColor" stroke-width="1.7"/></svg></span>
+            <div><span class="contact__k">Offices</span><span class="contact__v">Kitwe, Copperbelt, Zambia</span></div>
+          </li>
+          <li>
+            <span class="contact__ico"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5.2l3.2 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><span class="contact__k">Office hours</span><span class="contact__v">Mon&ndash;Fri 08:00&ndash;17:00 &middot; Sat 08:00&ndash;13:00</span></div>
+          </li>
+        </ul>
+
+        <div class="contact__quick">
+          <a class="btn btn--wa magnetic" href="https://wa.me/260975341516?text=Hello%20Cyber%20Tech%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">WhatsApp us now</a>
+          <a class="btn btn--ghost magnetic" href="tel:+260975341516">Call the office</a>
+        </div>
+      </div>
+
+      <form class="form" id="quoteForm" data-reveal novalidate>
+        <h3 class="form__title">Request a free quote</h3>
+        <p class="form__note">Fill this in and choose how to send it &mdash; WhatsApp or email.</p>
+
+        <div class="field">
+          <label for="name">Full name <span>*</span></label>
+          <input id="name" name="name" type="text" placeholder="e.g. Mr. Banda" required />
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="org">School / Company</label>
+            <input id="org" name="org" type="text" placeholder="e.g. Kitwe Secondary School" />
+          </div>
+          <div class="field">
+            <label for="phone">Phone <span>*</span></label>
+            <input id="phone" name="phone" type="tel" placeholder="+260 …" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="service">What do you need? <span>*</span></label>
+          <select id="service" name="service" required>
+            <option value="">Select a service…</option>
+            <option>School Management System</option>
+            <option>Student / Parent Portal</option>
+            <option>University Management System</option>
+            <option>Business / Company Management System</option>
+            <option>Point of Sale &amp; Inventory</option>
+            <option>Payroll &amp; HR System</option>
+            <option>Website or Web Application</option>
+            <option>Software Installation &amp; IT Support</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Tell us more</label>
+          <textarea id="message" name="message" rows="4" placeholder="Briefly describe what the system should do, how many users, and when you'd like it ready."></textarea>
+        </div>
+
+        <div class="form__actions">
+          <button type="button" class="btn btn--wa magnetic" id="sendWhatsApp">Send via WhatsApp</button>
+          <button type="button" class="btn btn--ghost magnetic" id="sendEmail">Send via Email</button>
+        </div>
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#home" class="logo">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M6 9h20M6 16h13M6 23h17" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+        </span>
+        <span class="logo__text">Cyber<span>Tech</span></span>
+      </a>
+      <p>Custom software, management systems and IT solutions built in Kitwe, Zambia &mdash; for schools, colleges and businesses that want to work faster and smarter.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Services</h4>
+      <a href="#services">School Management</a>
+      <a href="#services">Student Portals</a>
+      <a href="#services">Business Systems</a>
+      <a href="#services">Payroll &amp; HR</a>
+      <a href="#services">Software Installation</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Company</h4>
+      <a href="#solutions">Solutions</a>
+      <a href="#work">Our Work</a>
+      <a href="#process">Process</a>
+      <a href="#packages">Engagements</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="tel:+260975341516">+260 975 341 516</a>
+      <a href="mailto:rainserick@gmail.com">rainserick@gmail.com</a>
+      <span>Kitwe, Copperbelt</span>
+      <span>Zambia</span>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; <span id="year">2026</span> Cyber Tech. All rights reserved.</p>
+    <p class="footer__made">Designed &amp; developed by Cyber Tech</p>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="fab-wa" href="https://wa.me/260975341516?text=Hello%20Cyber%20Tech%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat with Cyber Tech on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.16c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.75-1.08-4.5-3.88-4.64-4.06-.13-.18-1.11-1.48-1.11-2.82s.7-2 .95-2.28c.25-.27.54-.34.72-.34l.52.01c.17 0 .4-.06.62.47.24.57.8 1.98.87 2.12.07.14.12.3.02.48-.09.18-.14.3-.28.46l-.42.48c-.14.14-.28.29-.12.57.16.27.71 1.17 1.52 1.9 1.05.93 1.93 1.22 2.2 1.36.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.61-.14.25.09 1.58.75 1.85.88.27.14.45.2.52.32.07.11.07.66-.17 1.34z"/></svg>
+</a>
+
+<!-- Back to top -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+# OS / editor cruft
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Environment / secrets — never commit real values
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*

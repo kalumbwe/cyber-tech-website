@@ -1,0 +1,27 @@
+# Render Blueprint — Cyber Tech marketing site
+# Static site: no build step, files are served straight from the repo root.
+# Docs: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: cyber-tech
+    runtime: static
+    buildCommand: echo "Static site - no build step required"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      # Long cache for fingerprint-free assets is risky, so keep it short
+      # enough that edits show up quickly after a redeploy.
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=3600
