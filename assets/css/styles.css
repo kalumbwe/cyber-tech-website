@@ -548,7 +548,9 @@ body.cursor-ready .cursor-ring{ opacity:1; }
 .quote-card__by span{ font-size:.84rem; color:var(--dim); }
 
 /* ---------- PLANS ---------- */
-.plans{ display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:1.35rem; align-items:stretch; }
+/* Fixed 3-up so the six packages sit as two clean rows.
+   Row gap clears the badge that protrudes above the featured cards. */
+.plans{ display:grid; grid-template-columns:repeat(3,1fr); gap:2.2rem 1.35rem; align-items:stretch; }
 .plan{
   position:relative; display:flex; flex-direction:column;
   padding:2.1rem 1.8rem; border-radius:var(--radius-lg);
@@ -568,8 +570,13 @@ body.cursor-ready .cursor-ring{ opacity:1; }
   font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
   color:#04121a; background:var(--grad);
 }
+.plan__tier{
+  display:block; margin-bottom:.35rem;
+  font-size:.7rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+}
 .plan__name{ font-size:1.35rem; font-weight:750; letter-spacing:-.025em; }
-.plan__for{ color:var(--dim); font-size:.88rem; margin-top:.2rem; }
+.plan__for{ color:var(--dim); font-size:.88rem; margin-top:.2rem; min-height:2.6em; }
 .plan__list{ display:grid; gap:.7rem; margin:1.5rem 0 1.9rem; padding-top:1.4rem; border-top:1px solid var(--border); flex:1; }
 .plan__list li{ position:relative; padding-left:1.65rem; font-size:.93rem; color:var(--muted); }
 .plan__list li::before{
@@ -577,6 +584,37 @@ body.cursor-ready .cursor-ring{ opacity:1; }
   border-left:2px solid var(--accent); border-bottom:2px solid var(--accent);
   transform:rotate(-45deg) scale(.8); border-radius:1px;
 }
+
+/* ---------- SECTORS ---------- */
+.sectors{
+  margin-top:3.5rem; padding:2.4rem 2rem;
+  border-radius:var(--radius-lg); border:1px solid var(--border);
+  background:linear-gradient(160deg, rgba(255,255,255,.045), rgba(255,255,255,.012));
+}
+.sectors__head{ text-align:center; margin-bottom:1.8rem; }
+.sectors__head h3{ font-size:1.4rem; font-weight:750; letter-spacing:-.025em; }
+.sectors__head p{ color:var(--muted); font-size:.94rem; margin-top:.4rem; }
+.sectors__grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:.6rem;
+}
+.sectors__grid li{
+  position:relative; padding:.7rem .9rem .7rem 2.1rem;
+  border-radius:11px; font-size:.9rem; color:var(--muted);
+  background:rgba(255,255,255,.035); border:1px solid var(--border);
+  transition:color .28s, border-color .28s, background-color .28s, transform .28s var(--ease);
+}
+.sectors__grid li::before{
+  content:''; position:absolute; left:.9rem; top:50%; margin-top:-3px;
+  width:6px; height:6px; border-radius:50%; background:var(--accent);
+  box-shadow:0 0 8px rgba(34,211,238,.8);
+}
+.sectors__grid li:hover{
+  color:var(--text); border-color:var(--border-2);
+  background:rgba(34,211,238,.06); transform:translateY(-2px);
+}
+.sectors__cta{ margin-top:1.6rem; text-align:center; color:var(--dim); font-size:.94rem; }
+.sectors__cta a{ color:var(--accent); font-weight:550; border-bottom:1px solid rgba(34,211,238,.4); }
+.sectors__cta a:hover{ border-bottom-color:var(--accent); }
 
 /* ---------- FAQ ---------- */
 .faq{ display:grid; gap:.75rem; }
@@ -715,6 +753,7 @@ a.contact__v:hover{ color:var(--accent); }
   .split--reverse .split__text{ order:0; }
   .contact{ grid-template-columns:1fr; gap:2.6rem; }
   .footer__inner{ grid-template-columns:1fr 1fr; gap:2rem; }
+  .plans{ grid-template-columns:repeat(2,1fr); }
 }
 
 @media (max-width:860px){
@@ -744,6 +783,9 @@ a.contact__v:hover{ color:var(--accent); }
   .stat__num{ font-size:1.8rem; }
   .form,.quote-card,.clock-card{ padding:1.5rem 1.25rem; }
   .footer__inner{ grid-template-columns:1fr; }
+  .plans{ grid-template-columns:1fr; }
+  .plan__for{ min-height:0; }
+  .sectors{ padding:1.8rem 1.25rem; }
   .hero__actions .btn{ width:100%; }
   .contact__quick .btn{ width:100%; }
   .mock__body{ grid-template-columns:44px 1fr; }
